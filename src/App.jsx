@@ -9,6 +9,7 @@ import Forms from './components/Forms';
 import { TbBrandTelegram } from "react-icons/tb";
 import { FaWhatsapp } from "react-icons/fa";
 
+
 function App() {
   
   
@@ -185,7 +186,7 @@ function App() {
                             </section>
                           <footer className='text-white bg-[#0F2C5C] snap-start py-6 md:py-3'>
                             <div className="flex justify-center  my-4  items-center md:justify-between md:mx-8 mx-3">
-                              <div className='flex space-y-1 flex-col items-centerjustify-center md:justify-start md:items-start'>
+                              <div className='flex space-y-1 flex-col items-center justify-center md:justify-start md:items-start'>
                                       <div>
                                         <h1 className='font-nukshock'>  CPAWS STUDIO</h1>
                                       </div>
