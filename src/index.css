@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: aicon;
+  src: url(/src/assets/fonts/AICON-Bold.otf);
+}
+@font-face {
+  font-family: nukshock;
+  src: url(/src/assets/fonts/nulshock.otf);
+}
+@font-face {
+  font-family: texts;
+  src: url(/src/assets/fonts/text.otf);
+}
+@font-face {
+  font-family: pop;
+  src: url(/src/assets/fonts/pop.ttf);
+
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 90s ease-in-out infinite;
+  transition: all;
+}
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+html, body{
+  scroll-behavior: smooth;
+}
